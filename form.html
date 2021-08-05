@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="pt_BR">
+<head>
+    <meta charset="UTF-8">  
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário de Cadastro</title>
+
+    <link rel="shortcut icon" href="./public/img/tree_ico.png">
+    <link rel="stylesheet" href="./public/css/dados.css">
+</head>
+<body>
+    <header id="logo_home">
+        <img src="./public/img/logo.png" style="width: 8em;" alt="Logo">
+    </header>
+    <div id="second">
+        <div>
+            <h1 id="title">Cadastro</h1>
+            <p id="subtitle"> <strong> Insira seus Dados </strong></p>
+            <br>
+        </div>
+
+        <form>
+            <fieldset class="group">
+                <div>
+                    <label for="nome"> <strong> Nome </strong> </label>
+                    <input type="text" name="nome" id="nome" required>
+                </div>
+
+                <div>
+                    <label for="sobrenome"> <strong>Sobrenome</strong> </label>
+                    <input type="text" name="sobrenome" id="sobrenome" required>
+                </div>
+            </fieldset>
+
+            <div class="field">
+                <label for="email"> <strong>Email</strong> </label>
+                <input type="email" name="email" id="email" required>
+            </div>
+
+            <div class="field">
+                <label> <strong> ipsum dolor sit amet </strong></label>
+                <label>
+                    <input type="radio" name="quest" id="quest" value="ans1">Lorem
+                </label>
+                <label>Lorem ipsum dolor sit amet</label>
+                <label>
+                    <input type="radio" name="quest" id="quest" value="ans2">Lorem
+                </label>
+                <label>Lorem ipsum dolor sit amet</label>
+                <label>
+                    <input type="radio" name="quest" id="quest" value="ans3">Lorem
+                </label>            
+            </div>
+
+            <div class="field">
+                <label> <strong>Possui Carro? </strong> </label>
+                <label>
+                    <input type="radio" name="car" id="car" value="yes">Sim
+                </label>
+                <label>
+                    <input type="radio" name="car" id="car" value="no">Não
+                </label>                      
+            </div>
+
+
+            <!-- ALTERAR VALUES*********************************************-->
+            <div class="field">
+                <label> <strong> lorem</strong> </label>
+                <label>
+                    <input type="radio" name="song" id="song" value="rock">lorem
+                </label>
+                <label>Lorem ipsum dolor sit amet</label>
+                <label>
+                    <input type="radio" name="song" id="song" value="mpb">lorem
+                </label>
+                <label>Lorem ipsum dolor sit amet</label>
+                <label>
+                    <input type="radio" name="song" id="song" value="jazz">lorem
+                </label>            
+            </div>
+
+
+            <div class="field">
+                <label for="list"> <strong> LIST </strong> </label>
+                <!-- ALTERAR id POSTERIORMENTE *********************************************-->
+                <select id="list">
+                    <option selected disabled value="">Selecione</option>
+                    <option>Lorem</option>
+                    <option>Ipsum</option>
+                    <option>Kratos</option>
+                    <option>Jett</option>
+                </select>
+            </div>
+
+
+
+            <!-- ALTERAR id e value e name POSTERIORMENTE *********************************************-->
+            <fieldset class="group">
+                <div>
+                    <label> <strong>Selecione várias </strong> </label><br><br>
+                    <input type="checkbox" name="select1" id="select1" value="opt1">
+                    <label for="select1">Rock</label>
+                    <input type="checkbox" name="select2" id="select2" value="opt2">
+                    <label for="select1">Jazz</label>
+                    <input type="checkbox" name="select3" id="select3" value="opt3">
+                    <label for="select1">MPB</label>
+                    <input type="checkbox" name="select4" id="select4" value="opt4">
+                    <label for="select1">Forró</label>
+                    <input type="checkbox" name="select5" id="select5" value="opt5">
+                    <label for="select1">RAP</label>
+                    <input type="checkbox" name="select6" id="select6" value="opt6">
+                    <label for="select1">Blues</label>
+                </div>
+            </fieldset>
+
+            <div class="field">
+                <br>
+                <label> <strong>Fale sobre você </strong></label>
+                <textarea rows="5" style="width: 26em" id="about" name="about"></textarea>
+            </div>
+
+            <button class="button" type="submit">Concluído</button>
+
+        </form>
+    </div>    
+</body>
+</html>
